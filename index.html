@@ -10,7 +10,7 @@
         <a href="./index.html"> Home </a>
     </nav>
     <header style="color: #56d2e7; text-align: left; float: inherit; background-color:#56d2e7;">
-      <img src="../images /asrtd-mac.jpg" alt="assorted-macs" width="154" height="150">
+      <img src="../images /asrtd-mac.jpg" alt="assorted-macs" width="154" height="150" style="background-repeat: inherit;">
       <img src="../images /asrtd-mac.jpg" alt="assorted-macs" width="154" height="150">
       <img src="../images /asrtd-mac.jpg" alt="assorted-macs" width="154" height="150">
       <img src="../images /asrtd-mac.jpg" alt="assorted-macs" width="154" height="150">
@@ -37,26 +37,65 @@
             <p style="margin: 20px;">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi exercitationem voluptatem fugit beatae autem atque optio cupiditate vitae, temporibus rem, obcaecati a recusandae facilis tempore placeat fuga necessitatibus qui sint.
             </p>
+
+            <div>
                 <form>
                     <fieldset>
-                <h4 style="text-align: center;">Membership Sign Up:</h4>
-                <p><label>Name:</label><input/></p>
-                <p><label>Email:</label><input/></p>
-                <p><label >Phone:</label><input/></p>
+                <legend style="text-align: center; color: #f8f8ff;">Membership Sign Up:</legend>
+                <p><label style="color: #f8f8ff;text-align: center;">Name:</label><input name="name"/></p>
+                <p><label style="color: #f8f8ff;text-align: center;">Email:</label><input type="email" /></p>
+                <p><label style="color: #f8f8ff;text-align: center;">Phone:</label><input type="phone"/></p>
+                <input type="submit" value="Enter">
                     </fieldset>
+                    <fieldset><textarea style="margin:auto;border:#a4fc9c;background-color: #dfc8f1;font-family: Arial, Helvetica, sans-serif;">How did you hear about us?</textarea>
+                        <br/>
+                    <input type="submit" value="Enter">
+                    </fieldset>
+
                 </form>
+            </div>
         </div>
     </section>
+    
     <img src="../images /mac-mix.jpg" alt="mix-of-macs" width="450" height="300" style="margin: 50px; border: 6px solid #a4fc9c;float: right;">
-        <div style="margin: 50px; color: #a4fc9c;text-align:left;font-family: Arial, Helvetica, sans-serif; background-color: #bd5e5e; width: 90%; float: left; border: 3px solid #56d2e7;">
+ 
+        <div style="margin: 50px; color: #dfc8f1;text-align:left;font-family: Arial, Helvetica, sans-serif; background-color: #bd5e5e; width: 90%; float: left; border: 3px solid #56d2e7;">
             <img src="../images /mx-bry-mac.jpg" alt="mix-berry-macs" width="350" height="500" style="margin: 50px; border: 6px solid #a4fc9c;float:left;">
             <h2 style="color: #f8f8ff;text-align: center;"> Online Mac Orders for Pickup </h2>
             <p style="margin: 20px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi fugiat vel aspernatur, aut mollitia provident, ducimus ut totam similique, doloremque at asperiores itaque facere eligendi maxime neque dicta soluta dolor?</p>
             <p style="margin: 20px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi sint, in ex, quisquam illo eum minima perspiciatis officia sequi exercitationem nihil, nemo deleniti suscipit dolorum reprehenderit temporibus odio officiis aliquam.</p>
+        
+            <form>
+                <fieldset>
+                    <legend><b>Macaron Order Form</b></legend>
+                    <p><label for="name"><b>Customer Name:</b><input type="text" name="name" id="name"></label></p>
+                    <p><label for="phone"><b>Phone Number:</b><input type="tel" name="phone" id="phone"></label></p>
+                    <p><label for="email"><b>Email:</b><input type="email" name="email" id="email"></label></p>
+                    <br/>
+                    <legend><b>Pickup Time</b></legend>
+                    <p>
+                      <input type="time" name="time" id="time">
+                    </p>
+                    <br/>
+                    <legend><b>Flavors</b></legend>
+                    <p><label for="blrspbry"><input type="checkbox" name="blrspbry" id="blrspbry"> Mixberry</label></p>
+                    <p><label for="lavwhtchoc"><input type="checkbox" name="whtchoc" id="lavwhtchoc"> Lavender White Chocolate</label></p>
+                    <p><label for="Pistachio"><input type="checkbox" name="pistachio" id="pistachio">Pistachio</label></p>
+                    <p><label for="Orange"><input type="checkbox" name="orange" id="orange">Orange</label></p>
+                    <p><label for="cherry"><input type="checkbox" name="cherry" id="cherry"> Cherry </label></p>
+                    <p><label for="mixbry"><input type="checkbox" name="mixbry" id="mixbry"> Mixed Berry</label></p>
+                    <br/>
+                    <legend><b>Macaron Count</b></legend>
+                    <input type="radio" name="small" id="small" value="6">
+                    <label for="small">6 count box</label>
+                    <input type="radio" name="med" id="med" value="12">
+                    <label for="med">12 count box</label>
+                    <input type="radio" name="lrg" id="lrg" value="24">
+                    <label for="lrg">24 count box</label>
+                    <br/>
+                    <input type="submit" value="Place Order!"> 
+                </fieldset>
+            </form>
         </div>
-   
-  
-   
-       
 </body>
 </html>
